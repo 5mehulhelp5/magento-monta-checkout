@@ -271,11 +271,11 @@
                      class="container montapacking-pickup-service pickup-option">
                     <span class="notranslate cropped_shipper montapacking-hidden" data-bind="text: shipperCode"></span>
                     <span class="notranslate cropped_company montapacking-hidden" data-bind="text: company "></span>
-                    <span class="notranslate cropped_img_name montapacking-hidden" data-bind="text: imageName "></span>
+                    <span class="notranslate cropped_img_name montapacking-hidden" if="hasOwnProperty('imageName')" data-bind="text: imageName"></span>
                     <span class="notranslate cropped_priceFormatted montapacking-hidden" data-bind="text: priceFormatted "></span>
                     <span class="notranslate cropped_street montapacking-hidden" data-bind="text: street "></span>
-                    <span class="notranslate cropped_housenumber montapacking-hidden"
-                          data-bind="text: houseNumber "></span>
+                    <span class="notranslate cropped_housenumber montapacking-hidden" if="hasOwnProperty('houseNumber')"
+                          data-bind="text: houseNumber"></span>
                     <span class="notranslate cropped_postal montapacking-hidden" data-bind="text: postalCode "></span>
                     <span class="notranslate cropped_city montapacking-hidden" data-bind="text: city "></span>
                     <span class="notranslate cropped_description montapacking-hidden"
